@@ -1,0 +1,124 @@
+.racket {
+    display: flex;
+    height: 46.8rem;
+    .racket__left {
+        width: 36.8%;
+        background-image: url(../../../build/img/ball-color-court-1405355.jpg);
+
+        .puntos {
+            display: flex;
+            img {
+                margin-right: 2.4rem;
+            }
+        }
+        .atras__adelante {
+            display: flex;
+            justify-content: start;
+            margin-top: 1rem;
+            .oval__atras {
+                border-radius: 50%;
+                background-color: none;
+                border: 1px solid $blanco;
+                width: 5.4rem;
+                height: 5.4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .oval__adelante {
+                margin-left: 1rem;
+                border-radius: 50%;
+                background-color: $amarillo;
+                width: 5.4rem;
+                height: 5.4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+    }
+    .racket__right{
+        width: 90.7rem;
+        .racket__right__imagenes {
+            margin-top: 5.1rem;
+            margin-left: 5.2rem;
+            display: flex;
+            .contenedor__imagen {
+                position: relative;
+                .oval__numero {
+                    background-color: $amarillo;
+                    border-radius: 50%;
+                    width: 3.9rem;
+                    height: 3.9rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 1.1rem;
+                    left: 1.1rem;
+                }
+                .imagen {
+                    width: 28.8rem;
+                    margin-right: 3.6rem;
+    
+                }
+                .imagen2 {
+                    width: 28.8rem;
+                    margin-right: 2.5rem;
+                }
+                .imagen__media {
+                    width: 21.2rem;
+                }
+            }
+
+
+
+
+        }
+    }
+}
+.racket__contenedor {
+    margin-left: 37.7%;
+    h2 {
+        width: 48.9%;
+        color: $blanco;
+        font-weight: 300;
+        span {
+            font-weight: $bold;
+        }
+    }
+    p {
+        width: 57.2%;
+        font-size: 1.8rem;
+        line-height: 1.67;
+        letter-spacing: 0.51px;
+    }
+}
+@include telefono {
+    .racket {
+        height: auto;
+        display: block;
+        .racket__left {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .racket__contenedor {
+                width: 95%;
+                margin: 0;
+                padding: 0;
+
+
+
+            }
+        }
+        .racket__right {
+            .racket__right__imagenes {
+                display: block;
+            }
+
+        }
+    }
+}

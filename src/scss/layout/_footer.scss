@@ -1,0 +1,46 @@
+.footer {
+    background-color: $amarillo;
+    height: 20.3rem;
+    display: flex;
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        .navegacion {
+            width: 45.1rem;
+
+
+            a {
+                margin-right: 2.5rem;
+                color: #2b3049;
+            }
+        }
+    }
+}
+.footer__contenedor {
+    margin-top: 6.4rem;
+    margin-left: 7.8rem;
+}
+.social {
+    img {
+        margin-right: 1.2rem;
+        margin-top: 1.3rem;
+    }
+}
+.footer__right{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+
+    img {
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-top: 7.7rem;
+        margin-right: 6.6rem;
+
+    }
+}
+@include telefono {
+    .footer {
+        display: block;
+    }
+}

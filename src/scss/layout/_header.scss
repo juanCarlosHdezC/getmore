@@ -1,0 +1,158 @@
+.header {
+    background-image: url(../../../build/img/group.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    
+    height: 78.5rem;
+    display: flex;
+    
+    .header__left {
+        display: flex;
+        justify-content: center;
+        width: 7.3%;
+        .fill {
+            width: 3.7rem;
+            height: 3.7rem;
+            margin-top: 0.9rem;
+        }
+    }
+    .header__line {
+        height: 81.1rem;
+        width:0.1rem;
+        border: solid 1px $blanco;
+    
+    }
+}
+.header__right {
+    display: flex;
+    flex-direction: column;
+    width: 92.6%;
+
+    
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4.5rem;
+        letter-spacing: 0.15rem;
+        &.fijo {
+            z-index: 10;
+            position: fixed;
+            padding: 1.5rem;
+            width: 100%;
+            background-color: rgba(255, 0, 0, 0.336);
+            opacity: 0.92;
+            margin: 0;
+    
+        }
+        .navegacion {
+            width: 57.9rem;
+
+            a {
+                margin-right: 2.5rem;
+                transition: all 0.5s;
+                &:hover {
+                    color: $amarillo;
+                }
+            }
+        }
+        .idioma {
+            margin-right: 3.7rem;
+            .español {
+                font-weight: $bold;
+            }
+        }
+        .menu {
+            display: none;
+            filter: invert(100%);
+        }
+        .fill {
+            display: none;
+        }
+    }
+    .title {
+        margin-top: 22.5rem;
+        width: 70.9rem;
+        line-height: 1.28;
+        letter-spacing: -0.05px;
+        .titulo {
+            span {
+                color: $amarillo;
+            }
+        }
+    }
+    .btn {
+        @include boton($blanco,inline-block);
+        img {
+
+            filter: invert(100%);
+            margin: 0;
+            width: 1.6rem;
+            height: .6rem
+        }
+    }
+
+}
+//-----------
+@include telefono {
+    .header {
+        .header__left{
+            display: none;
+        }
+        
+        .header__line {
+            display: none;
+        }
+        .header__right {
+            
+            .barra {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .navegacion {
+                    display: none;
+                }
+                .menu {
+                    display: block;
+                    filter: invert(100%);
+                }
+                .fill {
+                    display: block;
+                }
+        
+            }
+        }
+        
+        }
+        .contenedor__secundario {
+        margin-left: 0;
+        width: 95%;
+        margin: 0 auto;
+        }
+        .title {
+        display: flex;
+        justify-content: center;
+        .titulo {
+            width: 30rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .btn {
+            @include boton($blanco,block);
+            img {
+        
+                filter: invert(100%);
+                margin: 0;
+                width: 1.6rem;
+                height: .6rem
+            }
+        }
+    }
+    
+}
+
+
+
+
+
