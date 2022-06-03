@@ -1,37 +1,40 @@
-
 @mixin tablet {
-    @media(min-width: $telefono){
+    @media(min-width: $telefono) {
         @content;
     }
 }
+
 @mixin desktop {
-    @media(min-width: $desktop){
+    @media(min-width: $desktop) {
         @content;
     }
 }
+
 @mixin telefono {
-    @media(max-width: $telefono){
+    @media(max-width: $telefono) {
         @content;
     }
 }
+
 @mixin grid($columnas, $espacio) {
     display: grid;
     gap: $espacio;
     grid-template-columns: repeat($columnas, 1fr);
 
 }
-@mixin boton($color, $display){
+
+@mixin boton($color, $display) {
     display: $display;
     background-color: none;
     border: 1px solid $color;
     border-radius: 2.65rem;
     padding: 1.5rem 3.9rem 1.5rem 3rem;
-    width: 26.9rem;
     height: 5.3rem;
     text-transform: uppercase;
     transition: all .6s;
+
     &:hover {
         background-color: $color;
-        color:$amarillo ;
+        color: $amarillo;
     }
 }

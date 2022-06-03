@@ -2,33 +2,38 @@
     background-color: $amarillo;
     height: 20.3rem;
     display: flex;
+
     .footer__left {
         display: flex;
         flex-direction: column;
+
         .navegacion {
             width: 45.1rem;
 
 
             a {
                 margin-right: 2.5rem;
-                color: #2b3049;
+                color: $blanco;
             }
         }
     }
 }
+
 .footer__contenedor {
     margin-top: 6.4rem;
     margin-left: 7.8rem;
 }
+
 .social {
     img {
         margin-right: 1.2rem;
         margin-top: 1.3rem;
     }
 }
-.footer__right{
+
+.footer__right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
 
     img {
@@ -39,8 +44,35 @@
 
     }
 }
+
 @include telefono {
     .footer {
         display: block;
+
+        .footer__left {
+            .footer__contenedor {
+
+                margin: 4rem 0 0 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .navegacion {
+                    width: auto;
+                    margin-bottom: 1rem;
+
+                    a {
+                        margin-right: 1rem;
+
+                    }
+                }
+            }
+        }
+
+        .footer__right {
+            img {
+                margin: 2rem auto;
+            }
+        }
     }
 }

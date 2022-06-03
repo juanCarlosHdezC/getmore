@@ -1,32 +1,48 @@
 .accesorio {
     height: 39.2rem;
-    width: 100%;
     display: flex;
     background-color: $grisClaro;
     padding: 0;
+
     .accesorio__left {
         width: 33.4%;
+
         .accesorio__left__tennis {
             margin-left: 17.7%;
-            margin-bottom: 65.1%;
             text-align: end;
+            color: $amarillo;
+            text-transform: uppercase;
+            font-weight: $bold;
+            margin-top: 60%;
         }
 
     }
+
     .accesorio__right {
+        width: 38.6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
         h2 {
+            align-self: flex-start;
             color: $subTitulo;
-            width: 25.5rem;
+            font-size: 3rem;
             border-bottom: 16.9rem;
+            text-align: center;
         }
+
         p {
             color: $gris;
-            width: 39.3rem;
+
         }
 
     }
+
     .accesorio__btn {
         width: 28%;
+
         .btn {
             @include boton(#282e47, inline-block);
             color: #273048;
@@ -36,54 +52,58 @@
         }
     }
 }
-.accesorio__left__tennis {
-    color: $amarillo;
-    text-transform: uppercase;
-    font-weight: $bold;
-    width: 17.4rem;
-    margin-left: 25.5rem;
-    margin-top: 20rem;
-}
+
 @include telefono {
     .accesorio {
         display: block;
+
         .accesorio__left {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 95%;
+            width: 100%;
+
             .accesorio__left__tennis {
                 font-size: 2.5rem;
-                margin: 0
+                margin: 2rem 0 0 0;
             }
 
         }
+
         .accesorio__right {
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+
             h2 {
-                font-size: 1.5rem;
-                width: 25.5rem;
+                align-self: center;
+                font-size: 2.5rem;
                 border-bottom: 16.9rem;
             }
+
             p {
+                margin: 2rem;
                 color: $gris;
-                width: 39.3rem;
+                text-align: center;
+
             }
-    
+
         }
+
         .accesorio__btn {
             display: flex;
             justify-content: center;
-            width: 95%;
+            width: 100%;
+
             .btn {
                 @include boton(#282e47, inline-block);
                 color: #273048;
                 margin: 0;
+                width: 95%;
 
-    
-    
+
+
             }
         }
     }

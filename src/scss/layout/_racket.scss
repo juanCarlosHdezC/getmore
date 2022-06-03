@@ -1,20 +1,27 @@
 .racket {
     display: flex;
     height: 46.8rem;
+
     .racket__left {
         width: 36.8%;
-        background-image: url(build/img/ball-color-court-1405355.jpg);
+        background-image: url('/build/img/ball-color-court-1405355.jpg');
+        background-position: center center;
+        background-size: cover;
+
 
         .puntos {
             display: flex;
+
             img {
                 margin-right: 2.4rem;
             }
         }
+
         .atras__adelante {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             margin-top: 1rem;
+
             .oval__atras {
                 border-radius: 50%;
                 background-color: none;
@@ -26,6 +33,7 @@
                 align-items: center;
 
             }
+
             .oval__adelante {
                 margin-left: 1rem;
                 border-radius: 50%;
@@ -40,14 +48,18 @@
 
         }
     }
-    .racket__right{
-        width: 90.7rem;
+
+    .racket__right {
+        width: 63.2%;
+
         .racket__right__imagenes {
             margin-top: 5.1rem;
             margin-left: 5.2rem;
             display: flex;
+
             .contenedor__imagen {
                 position: relative;
+
                 .oval__numero {
                     background-color: $amarillo;
                     border-radius: 50%;
@@ -60,17 +72,20 @@
                     top: 1.1rem;
                     left: 1.1rem;
                 }
+
                 .imagen {
-                    width: 28.8rem;
+                    width: 95%;
                     margin-right: 3.6rem;
-    
+
                 }
+
                 .imagen2 {
-                    width: 28.8rem;
+                    width: 95%;
                     margin-right: 2.5rem;
                 }
+
                 .imagen__media {
-                    width: 21.2rem;
+                    width: 90%;
                 }
             }
 
@@ -80,16 +95,20 @@
         }
     }
 }
+
 .racket__contenedor {
     margin-left: 37.7%;
+
     h2 {
         width: 48.9%;
         color: $blanco;
         font-weight: 300;
+
         span {
             font-weight: $bold;
         }
     }
+
     p {
         width: 57.2%;
         font-size: 1.8rem;
@@ -97,26 +116,49 @@
         letter-spacing: 0.51px;
     }
 }
+
 @include telefono {
     .racket {
         height: auto;
         display: block;
+
         .racket__left {
             width: 100%;
             display: flex;
             justify-content: center;
+
             .racket__contenedor {
-                width: 95%;
+                width: 90%;
                 margin: 0;
-                padding: 0;
 
+                h2,
+                p {
+                    text-align: center;
+                    margin: 0 auto;
+                    width: auto;
+                }
 
+                .puntos {
+                    justify-content: center;
+                }
 
+                .atras__adelante {
+                    justify-content: center;
+                }
             }
         }
+
         .racket__right {
+            margin: 0 auto;
+            width: 95%;
+
             .racket__right__imagenes {
+                margin: 0;
                 display: block;
+
+                .contenedor__imagen {
+                    margin-top: 2rem;
+                }
             }
 
         }

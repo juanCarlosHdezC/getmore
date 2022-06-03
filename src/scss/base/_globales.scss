@@ -3,24 +3,32 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-*,*:before,*:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
+
 h1 {
     font-size: 5.3rem;
     color: $blanco;
 }
+
 h2 {
     font-size: 5rem;
 }
+
 p {
     font-size: 1.8rem;
     color: $blanco;
 }
+
 a {
     text-decoration: none;
     color: $blanco;
     font-size: 1.6rem;
+
     img {
         margin-left: 3.5rem;
     }
